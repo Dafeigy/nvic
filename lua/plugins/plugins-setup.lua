@@ -23,7 +23,28 @@ local plugins = {
 		config = function()
 			require 'nvim-treesitter.install'.compilers = { "gcc" } -- 只使用gcc作为编译器  
 		end,
-	}
+	},
+	'HiPhish/rainbow-delimiters.nvim',
+	{
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim", -- 这个相当于mason.nvim和lspconfig的桥梁
+		"neovim/nvim-lspconfig"
+	},
+	-- 自动补全
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-nvim-lsp",
+	'hrsh7th/cmp-cmdline', -- 命令行补全支持
+
+	"L3MON4D3/LuaSnip", -- snippets引擎，不装这个自动补全会出问题
+	"saadparwaiz1/cmp_luasnip",
+	"rafamadriz/friendly-snippets",
+	"hrsh7th/cmp-path", -- 文件路径
+
+	"numToStr/Comment.nvim", -- gcc和gc注释
+	"windwp/nvim-autopairs", -- 自动补全括号
+	"akinsho/bufferline.nvim", -- buffer分割线
+	{'akinsho/toggleterm.nvim', version = "*", config = true}, -- terminal插件
+	{"sphamba/smear-cursor.nvim"},
 }
 local opts = {} -- 注意要定义这个变量
 

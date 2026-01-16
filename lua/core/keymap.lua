@@ -20,4 +20,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+-- 切换buffer
+keymap.set("n", "<S-L>", ":bnext<CR>")
+keymap.set("n", "<S-H>", ":bprevious<CR>")
+keymap.set("n", "<leader>x", ":bdelete<CR>")
+
 
