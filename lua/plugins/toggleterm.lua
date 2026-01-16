@@ -1,7 +1,7 @@
 require("toggleterm").setup {
 	size = 20,  -- 默认终端窗口大小
 	start_in_insert = true,  -- 启动时进入插入模式
-	open_mapping = [[<C-p>]], -- 用于打开 PowerShell Alt+P
+	open_mapping = [[<A-p>]], -- 用于打开 PowerShell Alt+P
 	shell = '"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"',  -- 使用 PowerShell 7 作为终端
 	direction = 'float',  -- 设置终端为标签页模式
 	hide_numbers = true,  -- 隐藏行号
@@ -13,3 +13,4 @@ require("toggleterm").setup {
 	close_on_exit = true,  -- 退出时关闭终端
 	winbar = 'Terminal',  -- 启用 winbar, 设置为 "Terminal" 显示
 }
+
