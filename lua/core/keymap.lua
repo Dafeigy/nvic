@@ -25,4 +25,5 @@ keymap.set("n", "<S-L>", ":bnext<CR>")
 keymap.set("n", "<S-H>", ":bprevious<CR>")
 keymap.set("n", "<leader>x", ":bdelete<CR>")
 
-
+-- 窗口终端
+keymap.set("n", "<C-`>",":terminal<CR>")
