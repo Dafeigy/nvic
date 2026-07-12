@@ -11,11 +11,11 @@ require("mason").setup({
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"lua_ls",
-		"vue_ls",
+--		"vue_ls",
 		"pylsp",
-		"jsonls",
-		"html",
-		"ts_ls",
+--		"jsonls",
+--		"html",
+--		"ts_ls",
 	},
 	automatic_installation = true,
 })
