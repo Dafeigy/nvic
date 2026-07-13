@@ -12,3 +12,5 @@ require("plugins.bufferline")
 require("plugins.toggleterm")
 require("plugins.smear-cusor")
 
+-- 强制使用 OSC52（无论是否在 SSH 中）
+vim.g.clipboard = "osc52"
